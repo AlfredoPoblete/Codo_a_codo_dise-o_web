@@ -1,0 +1,22 @@
+body
+{
+    scroll-behavior: smooth;
+}
+
+.arriba
+{
+    height: 20%;
+    background-color: mediumorchid;
+}
+
+.medio
+{
+    height: 70%;
+    background-color: chocolate;
+}
+
+.abajo
+{
+    height: 10%;
+    background-color: khaki;
+}
