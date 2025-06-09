@@ -1,0 +1,48 @@
+
+body
+{
+    background-image: url(fondo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.caja
+{
+    border: 8px double goldenrod;
+    background-size: cover ;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+}
+
+.flex-container
+{
+    border: 7px ridge rgba(64, 224, 208, 0.372);
+    background: rgba(255, 166, 0, 0.306);
+    padding: 10px;
+    margin: 100px;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.c1
+{
+    background-image: url(1.jpg);
+}
+
+.c2
+{
+    background-image: url(2.jpg);
+}
+
+.c3
+{
+    background-image: url(3.jpeg);
+}
+
+.c4
+{
+    background-image: url(4.jpg);
+}
