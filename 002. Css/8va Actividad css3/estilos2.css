@@ -1,0 +1,141 @@
+/*la primera letra de la lista con color*/
+/*
+li::first-letter
+{
+    color: red;
+}
+*/
+
+/*la primer linea  de la lista con color*/
+/*
+li::first-line
+{
+    color: aqua;
+}
+*/
+
+/*coloca elementos antes y o despues de cada elemento*/
+/*
+li::before
+{
+    content: "---";
+}
+
+li::after
+{
+    content: "...";
+}
+*/
+
+/*---Pseudoelementos en cajas---
+.caja
+{
+    background-color: blue;
+    width: 200px;
+    height: 300px;
+    transform: rotate(45deg);
+}
+
+.caja2
+{
+    background-color: blue;
+    width: 200px;
+    height: 300px;
+    transform: scale(2) translate(200px,40px);
+}
+---------------------------------*/
+
+/*---Transciciones de caja yo imagenes---
+.caja
+{
+    background-color: blue;
+    width: 200px;
+    height: 300px;
+    transition-property: width background-color transform;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transform: rotate(0deg);
+}
+
+.caja:hover
+{
+    width: 500px;
+    background-color: goldenrod;
+    transform: rotate(360deg);
+}
+
+.caja2
+{
+    background-image: url('https://articles-img.sftcdn.net/t_articles/auto-mapping-folder/sites/2/2023/04/tierra-horizonte-planeta.jpg');
+    width: 500px;
+    height: 300px;
+    transition-property: filter width;
+    filter: grayscale(1);
+    transition-duration: 3s;
+    border: 2px solid red;
+}
+
+.caja2:hover
+{
+    width: 600px;
+    height: 500px;
+    filter: grayscale(0);
+    border: 4px dashed darkblue;
+}
+------------------------------------*/
+
+/*---Animaciones---
+.atras
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21, 33, 2);
+    animation-name: test;
+    animation-duration: 3s;
+}
+
+@keyframes test
+{
+    from
+    {
+        background-color: rgb(21, 33, 2) ;
+    }
+    to
+    {
+        background-color: blueviolet;
+    }
+}
+
+-------------------*/
+
+/*---Otro ejemplo de animacion infinita---
+.atras
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21, 33, 2);
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes test
+{
+    0%
+    {
+        background-color: rgb(21, 33, 2) ;
+    }
+    50%
+    {
+        background-color: blueviolet;
+    }
+    75%
+    {
+        background-color: brown;
+    }
+    100%
+    {
+        background-color: rgb(21, 33, 2)
+    }
+}
+--------------------------------------*/

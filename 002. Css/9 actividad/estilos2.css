@@ -1,0 +1,49 @@
+.caja
+{
+    border: 2px solid green;
+    background-color: lightcoral;
+    color: firebrick;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    margin: 5px;
+}
+
+/*Ajusta el tamano de cada una de las cajas para que entrene en el contenedor*/
+.flex-container
+{
+    border: 1px solid blueviolet;
+    background-color: gold;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+
+    /*
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap; coloca las cajas una al lado de otra (ordena, en el eje primario) */
+    
+    display: flex;
+    flex-flow: row wrap; /*lo mismo pero con una linea de codigo*/
+    justify-content: space-between; /*separa de acuerdo al tamano del padre*/
+    align-items: flex-start; /*ordena en el eje secundario*/
+    align-content: flex-end;
+}
+
+/*Puedo cambiar el orden de las cajas con esta propiedad */
+.c1
+{
+    order: 3;
+}
+
+.c2
+{
+    order: 1;
+}
+
+.c3
+{
+    order: 2;
+}

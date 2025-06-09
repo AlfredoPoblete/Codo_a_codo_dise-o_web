@@ -1,0 +1,25 @@
+.verde
+{
+    color:green;
+    font-size: 20px;
+}
+
+h3
+{
+    color: silver;
+    font-size: 30px;
+}
+
+/* esto es una clase */
+.naranja
+{
+    color: orange;
+    font-size: 18px;
+}
+
+/* esto es una ID */
+#rosa
+{
+    color: pink;
+    font-size: 20px;
+}

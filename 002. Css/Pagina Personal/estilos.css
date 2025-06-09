@@ -1,0 +1,379 @@
+/*---------------- GENERAL ITEMS--------------------*/
+*
+{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root
+{
+    --main-bg-color: #f0f0f0;
+    --gradient-color-A: rgb(78, 77, 77);
+    --gradient-color-B: rgb(0, 0, 0);
+    --detail-color: goldenrod;
+    --link-main-text-color: #fff;
+    --link-bg-color: rgba(0,0,0,0.5);
+    --line-color: rgb(255, 0, 0);
+    --border-color: #fff;
+    --white-color: white;
+    --black-color: black;
+    --other-color: rgb(172, 102, 37);
+}
+
+body
+{
+    background-color: var(--main-bg-color);
+}
+
+h1
+{
+    font-size: 50px;
+    color: var(--main-bg-color);
+    text-shadow: 1px 1px 3px var(--black-color);
+
+}
+
+/*---------------------END GENERAL ITEMS----------------*/
+
+/*-----------------------BANNER--------------------------*/
+.banner
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom,var(--gradient-color-A),rgba(0, 0, 0, 0.496)),url(img/banned.png);
+    background-size: cover;
+    background-position: center;
+}
+
+span
+{
+    color: var(--detail-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar
+{
+    width: 85%;
+    margin: auto;
+    padding:35px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a
+{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--link-main-text-color);
+    text-transform: uppercase;
+    transition: .25s ease-in;
+}
+
+#inicio
+{
+    display: inline-block;
+    margin: 30px;
+    position: relative;
+}
+
+#inicio a
+{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--link-main-text-color);
+    text-transform: uppercase;
+    transition: .25s ease-in;
+}
+
+
+
+/*------------------Pseudocodigos---------------------*/
+.navbar ul li::after
+{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background:var(--line-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after
+{
+    width: 100%;
+}
+
+.navbar ul li a:hover
+{
+    text-shadow: 0px 0px 20px var(--detail-color);
+}
+
+
+/*------------------End Pseudocodigos---------------------*/
+
+svg
+{
+    position: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(70%);
+}
+
+.content
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: var(--white-color);
+
+}
+
+.content h1
+{
+    font-size: 50px ;
+    margin: 30px;
+
+}
+
+.content p
+{
+    margin: 10px auto;
+    font-weight: 100px;
+    line-height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/*-----------------------END BANNER--------------------------*/
+
+/*-----------------------CARD SECTION-------------------------*/
+
+#main
+{
+    background-color: #f3f4f5;
+    padding: 50px 0;
+}
+
+.card-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+      
+}
+
+.card
+{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #dadada;
+    text-align: center;
+}
+
+.card:hover
+{
+    box-shadow: 0 0 20px var(--detail-color);
+    border: 3px solid var(--detail-color);
+}
+
+.card img
+{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card h3
+{
+    color: var(--detail-color);
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.card p
+{
+    color: #666;
+    font-size: 16px;
+}
+
+.card-cv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.cv
+{
+    border-radius: 20px;
+    height: 20px;
+    width: 240px;
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.495);
+    text-align: center;
+}
+
+.cv a
+{
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 1px  2px black;
+}
+
+.cv:hover
+{
+    box-shadow: 0 0 20px var(--detail-color);
+    border: 3px solid var(--detail-color);
+}
+
+/*----------------------END CARD SECTION-----------------------*/
+
+/*----------------------CONTACT SECTION-----------------------*/
+.contact
+{
+    padding: 40px;
+    text-align: center;
+    height: 25%;
+    background-color: #262625;
+    margin-top: 50px;
+}
+
+.contact h2
+{
+    color: var(--white-color);
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.contact-iconos
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon
+{
+    margin: 0 20 px;
+
+}
+
+.icon img
+{
+    width: 50px;
+    margin-bottom: 10px;
+    -webkit-filter: drop-shadow(0 0 5px var(--detail-color));
+    filter: drop-shadow(0 0 5px var(--detail-color));
+
+}
+
+.icon p
+{
+    font-size: 18px;
+    color: var(--detail-color);
+}
+
+
+
+/*----------------------END Contact SECTION-----------------------*/
+
+/*-----------------MEDIA QUERRY-------------------------*/
+
+@media(min-width: 1px) and (max-width: 1279px)
+{
+    :root
+    {
+        --main-bg-color: #f0f0f0;
+        --gradient-color-A: rgba(0, 24, 119, 0.35);
+        --gradient-color-B: rgba(0,0,0,1);
+        --detail-color: rgb(1, 190, 204);
+        --link-main-text-color: #fff;
+        --link-bg-color: rgba(0,0,0,0.5);
+        --line-color: rgb(0,179,255);
+        --border-color: #fff;
+        --white-color: white;
+        --black-color: black;
+        
+    }
+    svg
+    {
+        display: none;
+
+    }
+    
+    h1
+    {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .navbar
+    {
+        margin: auto;
+        display:flex ;
+        flex-direction: column;
+
+    }
+
+    .navbar ul li
+    {
+        font-size: 10px;
+
+    }
+
+    .card-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .contact
+    {
+        margin-top:  50px;
+        height: auto;
+
+    }
+
+    .contact-iconos
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

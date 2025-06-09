@@ -1,0 +1,177 @@
+/*
+---Esto es una caja donde el excedente de contenido se oculta---
+.caja
+{
+    background-color: blueviolet;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+*/
+
+/*
+---Esto es una caja donde el excedente de contenido es visible---
+.caja
+{
+    background-color: blueviolet;
+    width: 200px;
+    height: 300px;
+    overflow: visible;
+}
+*/
+
+/*
+---Esto es una caja donde el excedente de contenido es visible mediante scroll---
+.caja
+{
+    background-color: blueviolet;
+    width: 200px;
+    height: 300px;
+    overflow: scroll;
+}
+*/
+
+/* ---Esto es ejemplo de  diferentes Padding---
+.cajaUno
+{
+    background-color: brown;
+    width: 350px;
+    height: 200px;
+    padding: 50px;
+
+}
+
+.cajaDos
+{
+    background-color: burlywood;
+    width: 400px;
+    height: 250px;
+    padding: 50px 0 50px 0;
+}
+
+.cajaTres
+{
+    background-color: goldenrod;
+    width: 450px;
+    height: 300px;
+}
+-----------------------------------------------*/ 
+
+/*---Esto es para diferentes posicionamientos de las cajas---
+.cajaUno
+{
+    background-color: brown;
+    width: 350px;
+    height: 200px;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.cajaDos
+{
+    background-color: burlywood;
+    width: 400px;
+    height: 250px;
+    padding: 50px 0 50px 0;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.cajaTres
+{
+    background-color: goldenrod;
+    width: 450px;
+    height: 300px;
+    margin-left: 40%;
+}
+-----------------------------------------------------------*/
+
+/*---Utilizar diferentes tipos de bordes---
+.cajaUno
+{
+    background-color: brown;
+    width: 350px;
+    height: 200px;
+    border: 10px solid green;
+}
+
+.cajaDos
+{
+    background-color: burlywood;
+    width: 400px;
+    height: 250px;
+    border: 20px double yellowgreen;
+}
+
+.cajaTres
+{
+    background-color: goldenrod;
+    width: 450px;
+    height: 300px;
+    border: 15px ridge red;
+}
+-----------------------------------------*/
+
+/*---Diferentes tipos de Display---
+.cajaUno
+{
+    background-color: brown;
+    width: 350px;
+    height: 200px;
+    border: 10px solid green;
+    display: none;
+}
+
+.cajaDos
+{
+    background-color: burlywood;
+    width: 400px;
+    height: 250px;
+    border: 20px double yellowgreen;
+    display: inline-block;
+}
+
+.cajaTres
+{
+    background-color: goldenrod;
+    width: 450px;
+    height: 300px;
+    display: inline-block;
+}
+--------------------------------------*/
+
+/*---Diferentes tipos de Posicionamientos---
+.cajaUno
+{
+    background-color: brown;
+    width: 350px;
+    height: 200px;
+    border: 10px solid green;
+    margin-top: 70px;
+}
+
+.cajaDos
+{
+    background-color: burlywood;
+    width: 400px;
+    height: 250px;
+    border: 20px double yellowgreen;
+    position: relative;
+    top: 100px;
+    left: 600px;
+}
+
+.cajaTres
+{
+    background-color: goldenrod;
+    width: 450px;
+    height: 300px;
+    position: relative;
+    bottom: 100px;
+}
+------------------------------------------*/
+
+.grande
+{
+    font-size: 30PX;
+}

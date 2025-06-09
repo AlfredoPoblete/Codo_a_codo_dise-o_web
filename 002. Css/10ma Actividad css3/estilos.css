@@ -1,0 +1,23 @@
+.caja
+{
+    border: 2px solid orange;
+    margin: 10px;
+    text-align: center;
+    background-color: turquoise;
+
+}
+
+.grid-layout
+{
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(150, 150, 237);
+    padding: 20px;
+    border: 4px dotted gray;
+
+    /*Grid*/ 
+    display: grid;
+    grid-template-columns: 50% 10% 10% 30%;
+    grid-template-rows: 40px auto 100px auto;
+    justify-content: space-between;
+}

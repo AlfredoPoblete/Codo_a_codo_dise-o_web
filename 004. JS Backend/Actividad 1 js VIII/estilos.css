@@ -1,0 +1,73 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(180, 180, 48);
+    text-shadow: 1px 1px rgb(5, 5, 5);
+    display: grid;
+    min-height: 100vh ;
+    grid-template-rows: auto 1fr auto;
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    height: 30vh;
+    background-image: url(https://media.ambito.com/p/bc018f500b0552bafb2bb886d6aceb56/adjuntos/239/imagenes/038/786/0038786593/1200x675/smart/rick-and-mortyjpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Characters
+{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.personaje
+{
+    background-color: green;
+    color: wheat;
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.alive
+{
+    width: 8px;
+    height: 8px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: block;
+}
+
+.dead
+{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(255, 47, 47);
+    border-radius: 50%;
+    display: block;
+}
+
+.unknown
+{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(102, 103, 102);
+    border-radius: 50%;
+    display: block;
+}

@@ -1,0 +1,67 @@
+.caja
+{
+    border: 2px solid orange;
+    margin: 10px;
+    text-align: center;
+    background-color: turquoise;
+
+}
+
+.grid-layout
+{
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: rgb(150, 150, 237);
+    padding: 20px;
+    border: 4px dotted gray;
+
+    /*Grid*/ 
+    display: grid;
+    grid-template-areas: 'cabecera cabecera'
+                        'nav nav'
+                        'main lateral'
+                        'footer footer';
+}
+
+.c1
+{
+    grid-area: cabecera;
+    background-color: rgb(46, 15, 222);
+}
+
+.c2
+{
+    grid-area: nav;
+    background-color: orange;
+}
+
+.c3
+{
+    grid-area: main;
+    background-color: green;
+}
+
+.c4
+{
+    grid-area: lateral;
+    background-color: yellow;
+}
+
+.c5
+{
+    grid-area: footer;
+    background-color: brown;
+}
+
+@media (max-width:480px)
+{
+    .grid-layout
+    {
+        grid-template-areas: 'cabecera'
+                             'nav'
+                              'main'
+                              'lateral'
+                              'footer'; 
+    }
+}
